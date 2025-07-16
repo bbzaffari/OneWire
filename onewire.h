@@ -1,5 +1,5 @@
-// main.c - Testa se o sensor DS18B20 está presente no barramento OneWire
 #pragma once
+
 #include <stdio.h>
 #include <string.h>
 #include "freertos/FreeRTOS.h"
