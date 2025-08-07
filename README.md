@@ -45,34 +45,34 @@ If slower delays like vTaskDelay were used, the OneWire signal would break, caus
 
 * **onewire\_init(onewire\_t *ow, gpio\_num\_t gpio)**
 
-* Configures the GPIO pin as **open-drain with pull-up**, preparing it for OneWire communication.
-* Sets direction, pull-up/pull-down, and interrupt types.
+    * Configures the GPIO pin as **open-drain with pull-up**, preparing it for OneWire communication.
+    * Sets direction, pull-up/pull-down, and interrupt types.
 
 * *onewire\_reset(onewire\_t *ow)**
 
-* Sends a **reset pulse** (drive low \~480µs), then waits for devices to respond with a **presence pulse** (\~60–240µs low).
-* Returns `true` if at least one device responds.
+    * Sends a **reset pulse** (drive low \~480µs), then waits for devices to respond with a **presence pulse** (\~60–240µs low).
+    * Returns `true` if at least one device responds.
 
 * *onewire\_write\_bit(onewire\_t *ow, uint8\_t bit)**
 
-* Writes a single bit by **pulling the line low** and releasing it at precise times depending on whether writing '1' or '0'.
-* For '1': short low pulse; for '0': long low pulse.
+    * Writes a single bit by **pulling the line low** and releasing it at precise times depending on whether writing '1' or '0'.
+    * For '1': short low pulse; for '0': long low pulse.
 
 * *onewire\_read\_bit(onewire\_t *ow)**
 
-* Reads a bit by pulling the line low briefly, then switching to input and sampling the line after \~9µs.
+    * Reads a bit by pulling the line low briefly, then switching to input and sampling the line after \~9µs.
 
 * *onewire\_write\_byte(onewire\_t *ow, uint8\_t byte)**
 
-* Writes a byte, bit by bit, using `onewire_write_bit()` 8 times (LSB first).
+    * Writes a byte, bit by bit, using `onewire_write_bit()` 8 times (LSB first).
 
 * *onewire\_read\_byte(onewire\_t *ow)**
 
-* Reads a byte by calling `onewire_read_bit()` 8 times and assembling the bits (LSB first).
+    * Reads a byte by calling `onewire_read_bit()` 8 times and assembling the bits (LSB first).
 
 * **onewire\_delay\_us(uint32\_t us)**
 
-* Provides precise microsecond delays, essential for meeting OneWire protocol timings.
+    * Provides precise microsecond delays, essential for meeting OneWire protocol timings.
 
 ## Practical example
 
