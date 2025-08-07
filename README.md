@@ -19,6 +19,8 @@ OneWire is a communication protocol developed by Dallas Semiconductor (now Maxim
 
 In essence, OneWire allows many devices to communicate over just one wire by sending short, timed pulses that represent commands and data.
 
+---
+---
 ## How does this driver work?
 
 This driver, written in C using the ESP-IDF framework, manages all low-level OneWire operations:
@@ -95,7 +97,7 @@ if (onewire_reset(&ow)) {
 onewire_write_byte(&ow, 0xCC);  // Skip ROM command
 uint8_t temp = onewire_read_byte(&ow);
 ```
-
+---
 ## Learning points
 
 * OneWire relies heavily on **software timing**; hardware timers or precise delay functions are critical.
