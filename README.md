@@ -4,7 +4,7 @@
 
 This driver was developed by me, Bruno Bavaresco Zaffari, as part of my undergraduate final thesis project in Computer Engineering. It is one of the modules included in the `TCC` directory of the main repository, serving as a key component for managing low-level hardware communication in the final system. Everyone is free to use, modify, and adapt this code as they wish, with no need for copyrights.
 
-Note: This implementation focuses on basic OneWire communication (reset, read/write bits, ROM commands, function commands) but *does not implement support for parasite power* mode. In parasite mode, the DS18B20 draws power directly from the data line during high periods, requiring careful control and optional strong pull-up circuitry. This driver assumes the sensor is externally powered.
+>Note: This implementation focuses on basic OneWire communication (reset, read/write bits, ROM commands, function commands) but *does not implement support for parasite power* mode. In parasite mode, the DS18B20 draws power directly from the data line during high periods, requiring careful control and optional strong pull-up circuitry. This driver assumes the sensor is externally powered.
 
 ## What is OneWire?
 
