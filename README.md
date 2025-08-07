@@ -74,7 +74,7 @@ If slower delays like vTaskDelay were used, the OneWire signal would break, caus
 
     * Provides precise microsecond delays, essential for meeting OneWire protocol timings.
 
-## Practical example
+## Example
 
 1. Initialize bus:
 
