@@ -1,6 +1,6 @@
-# OneWire Driver (ESP-IDF, C)
+# OneWire Driver (ESP-IDF)
 
-**This code is shared publicly with no copyrights; anyone is free to use, modify, or redistribute it.**
+**This code is shared publicly with `**no** copyrights`; anyone is free to use, modify, or redistribute it.**
 
 This driver was developed by me, Bruno Bavaresco Zaffari, as part of my undergraduate final thesis project in Computer Engineering. It is one of the modules included in the `TCC` directory of the main repository, serving as a key component for managing low-level hardware communication in the final system. Everyone is free to use, modify, and adapt this code as they wish, with no need for copyrights.
 
@@ -17,7 +17,7 @@ OneWire is a communication protocol developed by Dallas Semiconductor (now Maxim
 * Requires **precise timing** to differentiate between logical '1' and '0'.
 * Typical applications: temperature sensors (e.g., DS18B20), ID chips (e.g., DS2401), EEPROMs, and battery monitoring ICs.
 
-In essence, OneWire allows many devices to communicate over just one wire by sending short, timed pulses that represent commands and data.
+> In essence, OneWire allows many devices to communicate over just one wire by sending short, timed pulses that represent commands and data.
 
 ---
 ---
