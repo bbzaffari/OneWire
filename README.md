@@ -62,7 +62,7 @@ If slower delays like vTaskDelay were used, the OneWire signal would break, caus
 
     * Reads a bit by pulling the line low briefly, then switching to input and sampling the line after \~9µs.
 
-* **onewire\_write\_byte(onewire\_t *ow, uint8\_t byte)**
+* **onewire\_write\_byte(onewire\_t \*ow, uint8\_t byte)**
 
     * Writes a byte, bit by bit, using `onewire_write_bit()` 8 times (LSB first).
 
