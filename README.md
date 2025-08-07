@@ -25,7 +25,7 @@ In essence, OneWire allows many devices to communicate over just one wire by sen
 
 This driver, written in C using the ESP-IDF framework, manages all low-level OneWire operations:
 
-### Why use esp\_rom\_delay\_us instead of vTaskDelay or other delays?
+### Why use **esp\_rom\_delay\_us()** instead of **vTaskDelay()** or other delays?
 
 In the OneWire driver, precise timing at the microsecond level is critical. Commands like writing or reading a bit require specific pulse durations (e.g., 6 µs, 60 µs, 480 µs) to meet the OneWire protocol specification.
 
